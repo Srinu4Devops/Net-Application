@@ -35,7 +35,7 @@ steps:
 - task: CopyFiles@2
   inputs:
     SourceFolder: 'HelloWebApp'
-    Contents: 'AzureDeploy*.json'
+    Contents: 'azuredeploy*.json'
     TargetFolder: '$(build.artifactStagingDirectory)'
 - task: PublishBuildArtifacts@1
   inputs:
